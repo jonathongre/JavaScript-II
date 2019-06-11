@@ -70,9 +70,22 @@ contains('Pencil', items, function (doesContain) {
     console.log(doesContain)
 });
 /* STRETCH PROBLEM */
+const myArray = [1, 1, 2, 2, 2, 3, 3, 4, 5, 6, 6, 7, 8, 8];
+
 
 function removeDuplicates(array, cb) {
     // removeDuplicates removes all duplicate values from the given array.
     // Pass the duplicate free array to the callback function.
     // Do not mutate the original array.
+    return cb(array);
 }
+
+console.log(removeDuplicates(myArray, function (array) {
+    let noDuplicates = [];
+    array.forEach(item => {
+        if (!noDuplicates.includes(item)) {
+            noDuplicates.push(item);
+        }
+    });
+    return noDuplicates;
+}));

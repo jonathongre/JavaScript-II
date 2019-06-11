@@ -494,7 +494,7 @@ let shirtOrder = [];
 runners.forEach(runner => shirtOrder.push(runner.first_name + ' ' + runner.shirt_size));
 console.log(shirtOrder);
 
-// Problem 3: List complanies and donation amount for thank you cards.
+// Problem 3: List companies and donation amount for thank you cards.
 let thankYou = [];
 runners.forEach(runner => thankYou.push(runner.company_name + ' ' + '$' + runner.donation));
 console.log(thankYou);
